@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Knewave|Great+Vibes|Roboto|Grand+Hotel" rel="stylesheet"> <!--Google Fonts-->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet"> <!--AOS framework-->
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script> <!--AOS framework-->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+          integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+          crossorigin="anonymous" /> <!--Bootstrap 4.css-->
+    <link rel="stylesheet" href="style.css" />
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous">
+    </script> <!-- jQuery -->
+    <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+            integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+            crossorigin="anonymous">
+    </script> <!--Popper.js-->
+    <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+            integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+            crossorigin="anonymous">
+    </script> <!--Bootstrap.js-->
+</head>
+<body>
+    <div class="container-fluid">
+
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto text-center" id="menu">
+                    <a class="nav-item nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#infographics">About</a>
+                    <a class="nav-item nav-link" href="#checkForecast">Forecast</a>
+                    <a class="nav-item nav-link" href="#contact">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <div>
+            <img class="img-fluid" src="img/background-image.png" alt="mainImg">
+        </div>
+        
+        <div class="text-center" id="infographics">
+            <img class="img-fluid" src="img/info_1.png" data-aos="zoom-in-down" data-aos-offset="300" alt="infographics"/>
+        </div>
+
+        <div id="checkForecast">
+            <img class="img-fluid" src="img/background-form.png" alt="forecastImg">
+
+            <div id="chooseCityDiv">
+                <p data-aos="fade-right"
+                   data-aos-offset="300"
+                   data-aos-easing="ease-in-sine" id="chooseCity">Choose the timeline from the dropdown</p>
+            </div>
+
+            <!--Dropdown menu-->
+
+            <div class="dropdown">
+                <button data-aos="fade-up" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Choose timeline
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#checkForecast" data-id="1" data-toggle="modal" data-target="#modal">Today</a>
+                    <a class="dropdown-item" href="#checkForecast" data-id="2" data-toggle="modal" data-target="#modal">Past week</a>
+                    <a class="dropdown-item" href="#checkForecast" data-id="3" data-toggle="modal" data-target="#modal">Past month</a>
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+            <div id="contact" class="text-center">
+                <h1 data-aos="flip-left" data-aos-duration="600">Contact us</h1>
+                <p data-aos="flip-left">Company Name</p>
+                <p data-aos="flip-left">1 Street name</p>
+                <p data-aos="flip-left">City, Country</p>
+                <ul class="list-inline">
+                    <li data-aos="zoom-in" data-aos-delay="100" class="list-inline-item"><img src="./img/phoneIcon.svg" alt="phoneIcon" /><p>+3581234567</p></li>
+                    <li data-aos="zoom-in" data-aos-delay="200" class="list-inline-item"><img src="./img/emailIcon.svg" alt="emailIcon" /><p>test@test.com</p></li>
+                </ul>
+            </div>
+        </footer>
+
+        <!-- Modal -->
+
+        <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog smalltext">
+                <div class="modal-content text-center">
+                    <div class="modal-body">
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+<script src="js.js" type="application/javascript"></script>
+</body>
+</html>

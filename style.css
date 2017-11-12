@@ -1,0 +1,181 @@
+/*Main styles*/
+
+nav {
+    font-family: 'Grand Hotel', cursive;
+    font-size: 2em;
+}
+nav button:active, nav button:focus {
+    outline: none;
+}
+footer {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/*Navbar*/
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0,0,0,1);
+}
+.navbar-light .navbar-toggler {
+    border-color: transparent;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #f3e39d;
+}
+nav .collapsing, nav .show {
+    background-color: white;
+    opacity: 0.7;
+}
+
+/*Infographics*/
+
+#infographics {
+    margin-top: 7%;
+}
+
+/*Forecast*/
+
+.btn-secondary {
+    color: black;
+    background-color: white;
+    border-color: white;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+    color: white;
+    background-color: #00b6de;
+    font-family: 'Roboto', sans-serif;
+    border-color: white;
+}
+.btn-secondary:not([disabled]):not(.disabled).active, .btn-secondary:not([disabled]):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+    color: white;
+    background-color: #00b6de;
+    border-color: white;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: none;
+}
+#checkForecast {
+    position: relative;
+    margin-top: 5%;
+}
+#chooseCity {
+    font-family: 'Great Vibes', cursive;
+    color: white;
+    position: absolute;
+}
+.dropdown {
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #00b6de;
+}
+
+/*Footer*/
+
+footer h1 {
+    font-family: 'Knewave', cursive;
+    color: #f3e39d;
+    font-size: 2.5em;
+}
+footer p, footer ul {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+footer ul {
+    margin-top: 15px;
+}
+footer ul li {
+    padding: 10px;
+}
+footer ul li img{
+    width: 45px;
+    height: auto;
+}
+
+/*Modal*/
+
+.modal-body{
+    font-family: 'Roboto', sans-serif;
+}
+.modal-body img {
+    margin-bottom: 4%;
+}
+
+/*Phones*/
+
+@media (max-width: 767px) {
+    footer {
+        margin-bottom: 10%;
+    }
+    .dropdown {
+        top: 130px;
+        left: 10%;
+    }
+    #infographics img {
+        width: 100%;
+        height: auto;
+    }
+    #chooseCity {
+        font-size: 2em;
+        top: 3%;
+        left: 10%;
+    }
+}
+
+/*Tablets*/
+
+@media (min-width: 768px) {
+    #infographics img {
+        width: 100%;
+        height: auto;
+    }
+    #chooseCityDiv {
+        width: 100px;
+    }
+    #chooseCity {
+        font-size: 4.5em;
+        top: 15%;
+        left: 5%;
+        width: 600px;
+    }
+    .dropdown {
+        top: 65%;
+        left: 5%;
+    }
+}
+
+/*Laptops*/
+
+@media (min-width: 992px) {
+    #infographics img {
+        width: 100%;
+        height: auto;
+    }
+    .dropdown {
+        top: 60%;
+        left: 5%;
+    }
+}
+
+/*Desktops*/
+
+@media (min-width: 1200px) {
+    .btn-secondary {
+        width: 200px;
+        height: 50px;
+    }
+    #infographics img {
+        width: 50%;
+        height: auto;
+    }
+    .dropdown {
+        top: 55%;
+        left: 5%;
+    }
+}
+
